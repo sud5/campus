@@ -111,7 +111,9 @@ function theme_campuswks_get_main_scss_content($theme) {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');
     } else if ($filename == 'plain.scss') {
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
-    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_campuswks', 'preset', 0, '/', $filename))) {
+    }else if ($filename == 'custom.scss') {
+        $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/custom.scss');
+    }else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_campuswks', 'preset', 0, '/', $filename))) {
         $scss .= $presetfile->get_content();
     } else {
         // Safety fallback - maybe new installs etc.
