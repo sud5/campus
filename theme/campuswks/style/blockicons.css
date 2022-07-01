@@ -1,0 +1,45 @@
+.block h5.card-title:before { font-family: FontAwesome; font-size: 18px; margin-right: 6px; content: "\f0c9"; color:#4c4c4c; font-weight: 400; }
+.dir-rtl .collapsed .tree_item.branch:before { content: " \f053"; }
+.block_news_items h5.card-title:before { content:"\f0a1"; }
+.block_navigation h5.card-title:before { content:"\f0e8"; }
+.block_calendar_upcoming h5.card-title:before, .block_calendar_month h5.card-title:before { content:"\f073"; }
+.block_course_list h5.card-title:before { content:"\f108"; }
+.block_completionstatus h5.card-title:before, .block_selfcompletion h5.card-title:before { content:"\f0e4"; }
+.block_rss_client h5.card-title:before { content:"\f09e"; }
+.block_blog_menu h5.card-title:before { content:"\f02d"; }
+.block_quiz_results h5.card-title:before { content:"\f080"; }
+.block_quiz_navblock h5.card-title:before { content:"\f126"; }
+.block_glossary_random h5.card-title:before { content:"\f0eb"; }
+.block_book_toc h5.card-title:before { content:"\f02d"; }
+.block_participants h5.card-title:before, .block_online_users h5.card-title:before { content:"\f0c0"; }
+.block_html h5.card-title:before { content:"\f022"; }
+.block_section_links h5.card-title:before { content:"\f02e"; }
+.block_activity_modules h5.card-title:before { content:"\f12e"; }
+.block_comments h5.card-title:before { content:"\f075"; }
+.block_settings h5.card-title:before { content:"\f085"; }
+.block_admin_bookmarks h5.card-title:before{ content:"\f02e"; }
+.block_blog_tags h5.card-title:before, .block_tags h5.card-title:before { content:"\f02c"; }
+.block_private_files h5.card-title:before { content:"\f114"; }
+.block_block_mentees h5.card-title:before { content:"\f0c0"; }
+.block_messages h5.card-title:before { content:"\f0e0"; }
+.block_community h5.card-title:before { content:"\f0ac"; }
+.block_login h5.card-title:before { content:"\f007"; }
+.block_recent_activity h5.card-title:before { content:"\f017"; }
+.block_search_forums h5.card-title:before { content:"\f0e6"; }
+.block_myprofile h5.card-title:before { content:"\f007"; }
+.block_adminblock h5.card-title:before { content:"\f009"; }
+.block_feedback h5.card-title:before { content:"\f087"; }
+.block_flickr h5.card-title:before { content:"\f03e"; }
+.block_youtube h5.card-title:before { content:"\f145"; }
+.block_course_badges h5.card-title:before { content:"\f091"; }
+.block_twitter_search h5.card-title:before { content:"\f099"; }
+.block_dashboardcourses h5.card-title:before { content:"\f109"; }
+.block_mytimeline h5.card-title:before { content:"\f017"; }
+.block_experts h5.card-title:before { content:"\f0c0"; }
+.block_rate_course h5.card-title:before { content:"\f123"; }
+.block_latest_discussion h5.card-title:before { content:"\f0e6"; }
+.block_trainer_feedback h5.card-title:before { content:"\f27a"; }
+.block_usage_activity h5.card-title:before { content: "\f0ae"; }
+.block_site_report h5.card-title:before { content: "\f200"; }
+.block_visited_courses h5.card-title:before { content: "\f2de"; }
+.block_performance_session h5.card-title:before { content:"\f073"; }
