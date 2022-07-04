@@ -506,16 +506,21 @@ body, #page-my-index{ background-color: #fff; font-family: 'Nunito!important'; f
 #region-main-box{ margin-top: 1.5rem; }
 .bg-white{ background-color: #fff; }
 .maincalendar .calendarmonth td.today .day-number-circle{ background-color: #c4c4c4; }
+
+.pagelayout-standard #page.drawers .main-inner, body.limitedwidth #page.drawers .main-inner{  max-width: none; }
 /* css added for global css --  starts  */
 
 /* login page starts  */
+.pagelayout-login #page{ background: #f8f9fa; background-image: none; background-repeat: repeat-x; background-color: #fff; }
 body.pagelayout-login { background-image: url([[pix:theme_university|loginbackground]]); background-size: cover; }
-.login-container { justify-content: flex-end; margin-right: 5%; }
 #page-login-index .card { text-align: center; box-shadow: 0 1px 15px 1px rgb(39 39 39 / 10%); background-color: rgb(255 255 255 / 87%); border-radius: .6rem; } 
-.login-heading { color: #fff; font-size: 24px; text-transform: uppercase; font-weight: 500; }
+.login-heading { color: #000; font-size: 24px; font-weight: 600; }
+.pagelayout-login #region-main, #page-login-index #region-main-box { padding-right: 0; padding-left: 0; }
+.login-wrapper { display: block; justify-content: left;}
+.login-container{ border-radius: 0; margin: auto; box-shadow: none;  padding-top: 10rem;}
 .login-box .card{ border: none; box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37); -webkit-box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37); -moz-box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37);}
 #page-login-index .card-header .img-fluid { max-width: 166px; }
-#page-login-index #region-main-box{ margin-top: 6%; } 
+#page-login-index #region-main-box{ margin-top: 0; } 
 .company-info { font-size: 20px; font-weight: 400; line-height: 2rem; }
 .login-left { padding-right: 14rem; }
 #page-login-index .custom-footer .homelink{ display: none; } 
@@ -523,9 +528,16 @@ body.pagelayout-login { background-image: url([[pix:theme_university|loginbackgr
 .cookies-box{background-color: #eff3fc; border-radius: 5px; padding: 20px 20px; text-align: center; font-size: 16px;}
 .pagelayout-login .form-control{border-radius: 3px; background-color: #fff; padding: 8px 10px; color: #000;}
 .pagelayout-login .logininfo{ text-align: center; }
+.pagelayout-login .login-form-submit .btn-primary{ background-color: #f7931e; border-color: #f7931e; color: #000; }
+.login-form-forgotpassword { margin-top: 4rem; }
+.login-form-forgotpassword a { color: #06a1ac; font-weight: 600; }
 .login-text{ font-size: 20px; color: #fff; padding: 0 14%; margin-top: 23%; font-family: roboto; font-weight: 300; line-height: 40px;}
 .login-box .card .btn { width: 40%; margin: auto; font-weight: 600; }
 #page-login-index .card-body{ box-shadow: none;  background-color: #fff; border-radius: 0 0 .5rem .5rem; }
+.custom-pass { display: block; float: left; width: 100%; }
+.custom-pass .custom-eye { float: right; position: relative; top: -32px; right: 16px; }
+.login-container-right{ background-color: #171616; color: #fff; min-height: 721px; }
+
 /* login page end  */
 
 /* css added by kamal side drawer  */
@@ -633,8 +645,6 @@ span.flaticon-speech-bubble { color: #fff; font-size: 48px; }
 .action-menu-item { margin: 0px 5px; }
 .block .block-controls .dropdown-toggle { padding-left: 2px; }
 #block-region-side-pre .card { background-color: #faefef; }
-.block .block-cards .course-info-container{ background-color: #f3f2f2; }
-.dashboard-card-deck .dashboard-card .dashboard-card-footer{ background-color: #f3f2f2!important; }
 .block .block-cards .multiline { font-weight: 500; }
 .dashboard-card-deck .coursename { font-weight: 500; }
 /* Block css ends */
@@ -655,6 +665,11 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 #page-course-view-topics #region-main { background-color: #ebf4f7; border: none; border-radius: 0.4rem; }
 #page-course-view-topics .course-content { margin-top: 0; background-color: #fff; padding: 1rem; border-radius: 0.4rem; }
 .section li.activity { padding: 0.2em 0; }
+.dashboard-card-deck .dashboard-card .dashboard-card-img{ border-radius: 0; }
+.card-deck .card{ margin-right: 2rem; }
+.dashboard-card-deck:not(.fixed-width-cards) .dashboard-card{ width: calc(33.33% - 3rem); box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 15%); }
+.dashboard-card-deck .dashboard-card .dashboard-card-footer{ background-color: #fff; }
+.block .block-cards .progress-text{ background-color: #776e6e;  max-height: 6px; }
 
 /*course indside page css ends*/
 
