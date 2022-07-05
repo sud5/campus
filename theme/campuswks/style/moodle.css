@@ -12354,7 +12354,7 @@ body.dragging .dragging {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: #ffffff !important;
   border-radius: 4px;
   padding: 0.7rem; }
   .activityiconcontainer .activityicon,
@@ -12370,45 +12370,45 @@ body.dragging .dragging {
   background-color: #5d63f6; }
   .activityiconcontainer.administration .activityicon,
   .activityiconcontainer.administration .icon {
-    filter: brightness(0) invert(1); }
+    /*filter: brightness(0) invert(1);*/ }
 
-.activityiconcontainer.assessment {
+/*.activityiconcontainer.assessment {
   background-color: #eb66a2; }
   .activityiconcontainer.assessment .activityicon,
   .activityiconcontainer.assessment .icon {
-    filter: brightness(0) invert(1); }
-
-.activityiconcontainer.collaboration {
+    filter: brightness(0) invert(1); }*/
+  
+/*.activityiconcontainer.collaboration {
   background-color: #f7634d; }
   .activityiconcontainer.collaboration .activityicon,
   .activityiconcontainer.collaboration .icon {
-    filter: brightness(0) invert(1); }
+    filter: brightness(0) invert(1);}*/ 
 
-.activityiconcontainer.communication {
+/*.activityiconcontainer.communication {
   background-color: #11a676; }
   .activityiconcontainer.communication .activityicon,
   .activityiconcontainer.communication .icon {
-    filter: brightness(0) invert(1); }
+    filter: brightness(0) invert(1); }*/
 
-.activityiconcontainer.content {
+/*.activityiconcontainer.content {
   background-color: #399be2; }
   .activityiconcontainer.content .activityicon,
   .activityiconcontainer.content .icon {
-    filter: brightness(0) invert(1); }
+    filter: brightness(0) invert(1); }*/
 
 .activityiconcontainer.interface {
   background-color: #a378ff; }
   .activityiconcontainer.interface .activityicon,
   .activityiconcontainer.interface .icon {
-    filter: brightness(0) invert(1); }
+    /*filter: brightness(0) invert(1);*/ }
 
-:root {
-  --activityadministration: #5d63f6;
-  --activityassessment: #eb66a2;
-  --activitycollaboration: #f7634d;
-  --activitycommunication: #11a676;
-  --activitycontent: #399be2;
-  --activityinterface: #a378ff; }
+/*:root {*/
+  /*--activityadministration: #5d63f6;*/
+  /*--activityassessment: #eb66a2;*/
+  /*--activitycollaboration: #f7634d;*/
+  /*--activitycommunication: #11a676;*/
+  /*--activitycontent: #399be2;*/
+  /*--activityinterface: #a378ff; }*/
 
 /* admin.less */
 .formtable tbody th {
