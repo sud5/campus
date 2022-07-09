@@ -514,19 +514,22 @@ body, #page-my-index{ background-color: #fff; font-family: 'Nunito!important'; f
 .pagelayout-login #page{ background: #f8f9fa; background-image: none; background-repeat: repeat-x; background-color: #fff; }
 body.pagelayout-login { background-image: url([[pix:theme_university|loginbackground]]); background-size: cover; }
 #page-login-index .card { text-align: center; box-shadow: 0 1px 15px 1px rgb(39 39 39 / 10%); background-color: rgb(255 255 255 / 87%); border-radius: .6rem; } 
-.login-heading { color: #000; font-size: 24px; font-weight: 600; }
-.pagelayout-login #region-main, #page-login-index #region-main-box { padding-right: 0; padding-left: 0; }
+.loginform{ width: 30vw; padding-top: 20vh; }
+.login-heading { color: #000; font-size: 24px; font-weight: 600;  margin-bottom: 3rem;}
+#page-login-index #region-main-box { padding-right: 0; padding-left: 0;  margin-top: 0;}
+.login-container h1.login-heading{ text-align: center; }
+.login-right-bg{ background-color: #171616; padding-top: 5%; text-align: center; color: #fff; text-align: center; color: #fff; }
+.support-haben{ font-weight: 600; display: block;  margin: 4rem 0 2rem 0;; font-size: 2rem; }
+.support-content a{ color: #37c6d0; text-decoration: none; }
 .login-wrapper { display: block; justify-content: left;}
-.login-container{ border-radius: 0; margin: auto; box-shadow: none;  padding-top: 10rem;}
+.login-container{ border-radius: 0; margin: auto; box-shadow: none;  padding: 0; max-width: 100%; height: inherit;}
 .login-box .card{ border: none; box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37); -webkit-box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37); -moz-box-shadow: -10px 0px 11px -9px rgba(0,0,0,0.37);}
 #page-login-index .card-header .img-fluid { max-width: 166px; }
-#page-login-index #region-main-box{ margin-top: 0; } 
 .company-info { font-size: 20px; font-weight: 400; line-height: 2rem; }
-.login-left { padding-right: 14rem; }
 #page-login-index .custom-footer .homelink{ display: none; } 
 .pagelayout-login .card-header{ border-bottom: none; padding: 20px 0px; background-color: #e2f5fc; border-radius: .5rem .5rem 0 0;  }
 .cookies-box{background-color: #eff3fc; border-radius: 5px; padding: 20px 20px; text-align: center; font-size: 16px;}
-.pagelayout-login .form-control{border-radius: 3px; background-color: #fff; padding: 8px 10px; color: #000;}
+.pagelayout-login .form-control{border-radius: 0; background-color: #fff; padding: 8px 10px; color: #000; border: 2px solid #404040;}
 .pagelayout-login .logininfo{ text-align: center; }
 .pagelayout-login .login-form-submit .btn-primary{ background-color: #f7931e; border-color: #f7931e; color: #000; }
 .login-form-forgotpassword { margin-top: 4rem; }
@@ -536,7 +539,8 @@ body.pagelayout-login { background-image: url([[pix:theme_university|loginbackgr
 #page-login-index .card-body{ box-shadow: none;  background-color: #fff; border-radius: 0 0 .5rem .5rem; }
 .custom-pass { display: block; float: left; width: 100%; }
 .custom-pass .custom-eye { float: right; position: relative; top: -32px; right: 16px; }
-.login-container-right{ background-color: #171616; color: #fff; min-height: 721px; }
+.login-container-right{ color: #fff; min-height: 721px; }
+.login-height{ height: inherit; }
 
 /* login page end  */
 
