@@ -603,6 +603,8 @@ body.drawer-ease { transition: .5s; }
 .page-item.disabled .page-link{ color: #bc9bd5; }
 .notoggleBG{ background-color: rgba(0, 0, 0, 0); }
 .notoggleBG .fa{ font-size: 21px; color:#fff; }
+#page.drawers.show-drawer-left{ margin-left: 200px; }
+#page.drawers{ padding-left: 0; }
 /* drawer css ends */
 
 /* header css stars */
@@ -621,7 +623,7 @@ body.drawer-ease { transition: .5s; }
 #page-header .logo img{ display: none; }
 /* header css ends */
 
-/* dashboard page css starts  */
+/* dashboard page css starts  
 .mh-head .btn-secondary{ background-color: #00687b; padding: .5rem; border-radius: .3rem; color: #fff; }
 .mh-head .btn-secondary:focus, .mh-head .btn-secondary:hover, .mh-head .btn-secondary:active { background-color: #5e7294!important; color: #fff; }
 .dashboard-card-deck.one-row { justify-content: flex-start!important; }
@@ -664,7 +666,6 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 #page-course-view-topics .course-content ul.section { margin: 0; }
 .section .activity.modtype_label.label { padding: 0; }
 .section .label .mod-indent-outer{ padding-left: 0; }
-.course-content ul li.section.main { border-bottom: 1px solid #7f7f7f; margin-bottom: 2rem; }
 .section .contentwithoutlink .no-overflow h5{ text-align: left!important; margin-top: 1rem; font-family: roboto medium; }
 #page-course-view-topics #region-main { background-color: #ebf4f7; border: none; border-radius: 0.4rem; }
 #page-course-view-topics .course-content { margin-top: 0; background-color: #fff; padding: 1rem; border-radius: 0.4rem; }
@@ -674,6 +675,28 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card{ width: calc(33.33% - 3rem); box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 15%); }
 .dashboard-card-deck .dashboard-card .dashboard-card-footer{ background-color: #fff; }
 .block .block-cards .progress-text{ background-color: #776e6e;  max-height: 6px; }
+.page-mycourses [data-region="filter"] { display: none!important; }
+.courseindex .courseindex-item.pageitem{ background-color: #c4c4c4; border-radius: 0; color: #000; }
+.courseindex .courseindex-item.pageitem a{ color: #000;}
+.courseindex .courseindex-item.pageitem:hover, .courseindex .courseindex-item.pageitem:focus{ background-color: #c4c4c4; }
+
+.courseindex .courseindex-item.pageitem:hover .courseindex-link, 
+.courseindex .courseindex-item.pageitem:hover .courseindex-chevron, 
+.courseindex .courseindex-item.pageitem:focus .courseindex-link, 
+.courseindex .courseindex-item.pageitem:focus .courseindex-chevron { color: #000;}
+.page-context-header{ margin-bottom: 1rem; }
+.course-content ul li.section.main{ margin-bottom: 3rem;  border: 1px solid #e5e5e5; border-top: 6px solid #776e6e;  padding: 1rem; box-shadow: 0px 0.3rem 0.2rem 0px rgb(0 0 0 / 15%);}
+.activity-item:not(.activityinline) { border: 0; border-bottom: 1px solid #dee2e6; border-radius: 0; }
+.activity-wrapper .activitytitle .text-uppercase.small { font-weight: 600; font-size: 1.1rem; }
+.secondary-navigation { max-width: none; }
+.secondary-navigation .navigation { border-top: 0; border-bottom: 1px solid #37c6d0; height: 60px; }
+.secondary-navigation .navigation .nav-tabs .nav-link { color: #37c6d0; }
+.secondary-navigation .moremenu .nav-link:hover, .secondary-navigation .moremenu .nav-link:focus {  color: #000; border-bottom: 3px solid #2ca5ae; background-color: #fff; }
+.header-maxwidth{ max-width: none; }
+
+.secondary-navigation  .moremenu .nav-link.active, .secondary-navigation .moremenu .nav-link.active:focus, 
+.secondary-navigation .moremenu .nav-link.active:hover { background-color: #fff; color: #000; border-bottom: 3px solid #2ca5ae; }
+
 
 /*course indside page css ends*/
 
@@ -690,7 +713,8 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 
 
 /* footer css start */
-.custom-footer { color: #adadad; background-color: #00505f; padding: 1rem; font-size: .9rem;}
+.pagelayout-standard #page.drawers .footer-popover, body.limitedwidth #page.drawers .footer-popover{ max-width: none; }
+/*.custom-footer { color: #adadad; background-color: #00505f; padding: 1rem; font-size: .9rem;}
 .custom-footer a, .custom-footer a .icon { color: #adadad!important; }
 .custom-footer a:hover{ text-decoration: underline;}
 .custom-footer .list-unstyled li { margin: 0px 10px; }
@@ -699,7 +723,7 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 #goto-top-link a .icon{ color: #fff!important; margin-left: -1px; margin-top: 6px; }
 .follow-icon { list-style: none; display: inline-flex; padding-left: 0; }
 .custom-footer a { color: #333; text-decoration: none; }
-.follow-icon li i.fa { color: #0a1a34; padding: 8px; font-size: 20px; width: 36px; text-align: center; border-radius: 50%; background-color: #9c9c9c; margin-right: 0.3rem; }
+.follow-icon li i.fa { color: #0a1a34; padding: 8px; font-size: 20px; width: 36px; text-align: center; border-radius: 50%; background-color: #9c9c9c; margin-right: 0.3rem; }*/
 /* footer css ends */
 
 @media (max-width: 1600px) {
