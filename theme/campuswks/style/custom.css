@@ -696,8 +696,15 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 
 .secondary-navigation  .moremenu .nav-link.active, .secondary-navigation .moremenu .nav-link.active:focus, 
 .secondary-navigation .moremenu .nav-link.active:hover { background-color: #fff; color: #000; border-bottom: 3px solid #2ca5ae; }
+.course-content-item-content.collapse.show .course-section.main { margin-bottom: 0; border: 0; padding: 0; box-shadow: none; }
+.course-content-item-content.collapse.show .activity-item{ border-bottom: 0; }
+/*.course-content ul li.section.main .course-section-header .expanded-icon, .course-content ul li.section.main .course-section-header .collapsed-icon{ display: none;} 
+.course-content-item-content.collapse.show .course-section.main .course-section-header .expanded-icon, .course-content-item-content.collapse.show .course-section.main .course-section-header .collapsed-icon{ display: block!important;} */
 
-
+/*.course-section-header [data-toggle="collapse"] .expanded-icon{ display: none; }
+.course-content-item-content.collapse.show .icons-collapse-expand {
+    display: block!important;
+}*/
 /*course indside page css ends*/
 
 /*  side drawer scroll bar csss starts */
