@@ -76,6 +76,11 @@ class section extends \core_courseformat\output\local\content\section {
         } else {
             $data->collapsemenu = false;
         }
+        if($this->section->parent == 0){
+        $data->type_class = "parent-section";   
+        }else{
+        $data->type_class = "child-section";
+        }
 
         return $data;
     }
