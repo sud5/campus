@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template format_flexsections/local/content/section
+    @template core_courseformat/local/content/section
 
     Displays a course section.
 
@@ -38,7 +38,7 @@
                 {
                     "cmitem": {
                         "cmformat": {
-                            "cmname": {"displayvalue": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Forum example</span></a>"},
+                            "cmname": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Forum example</span></a>",
                             "hasname": "true"
                         },
                         "id": 3,
@@ -50,7 +50,7 @@
                 {
                     "cmitem": {
                         "cmformat": {
-                            "cmname": {"displayvalue": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Another forum</span></a>"},
+                            "cmname": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Assign example</span></a>",
                             "hasname": "true"
                         },
                         "id": 4,
@@ -83,26 +83,28 @@
         "insertafter": true,
         "numsections": 42,
         "sitehome": false,
-        "highlightedlabel" : "Highlighted",
-        "testingonly-make-mustache-lint-happy": 1
+        "highlightedlabel" : "Highlighted"
     }
 }}
-{{#testingonly-make-mustache-lint-happy}}
-<ul>
-{{/testingonly-make-mustache-lint-happy}}
-
-{{< core/section }}
-
-    {{$ core_courseformat/local/content/section/content }}
-        {{> format_flexsections/local/content/section/content }}
-    {{/ core_courseformat/local/content/section/content }}
-
-    {{$ core_courseformat/local/content/section/header }}
-        {{> format_flexsections/local/content/section/header }}
-    {{/ core_courseformat/local/content/section/header }}
-
-{{/ core/section }}
-
-{{#testingonly-make-mustache-lint-happy}}
-</ul>
-{{/testingonly-make-mustache-lint-happy}}
+<div class = "{{type_class}}">
+<li id="section-{{num}}"
+    class="section course-section main {{#onlysummary}} section-summary {{/onlysummary}} clearfix
+            {{#ishidden}} hidden {{/ishidden}} {{#iscurrent}} current {{/iscurrent}}
+            {{#isstealth}} orphaned {{/isstealth}}"
+    data-sectionid="{{num}}"
+    data-sectionreturnid="{{sectionreturnid}}"
+    data-for="section"
+    data-id="{{id}}"
+    data-number="{{num}}"
+>
+    <div class="course-section-header d-flex"
+        data-for="section_title"
+        data-id="{{id}}"
+        data-number="{{num}}"
+    >
+        {{$ core_courseformat/local/content/section/content }}
+            {{> core_courseformat/local/content/section/content }}
+        {{/ core_courseformat/local/content/section/content }}
+    </div>
+</li>
+</div>

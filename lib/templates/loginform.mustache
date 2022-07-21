@@ -139,7 +139,6 @@
                 !}}class="form-control form-control-lg" {{!
                 !}}placeholder="{{#cleanstr}}password{{/cleanstr}}" {{!
                 !}}autocomplete="current-password">
-        <span toggle="#password" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
         </div>
         <div class="login-form-submit form-group">
             <button class="btn btn-primary btn-lg" type="submit" id="loginbtn">{{#str}}login{{/str}}</button>
@@ -201,23 +200,6 @@
 </div>
 
 {{#js}}
-$(".toggle-password").click(function() {
-
- $(this).toggleClass("fa-eye-slash fa-eye");
-
-  var input = $($(this).attr("toggle"));
-
-  if (input.attr("type") == "password") {
-
-    input.attr("type", "text");
-
-  } else {
-
-    input.attr("type", "password");
-
-  }
-
-});
     {{^error}}
         {{#autofocusform}}
             var userNameField = document.getElementById('username');
