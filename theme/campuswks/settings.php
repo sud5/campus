@@ -81,7 +81,7 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
-
+   
     // Variable $body-color.
     // We use an empty default value because the default colour should come from the preset.
     $name = 'theme_campuswks/brandcolor';
@@ -93,6 +93,34 @@ if ($ADMIN->fulltree) {
 
     // Must add the page after definiting all the settings!
     $settings->add($page);
+    
+    // Login Page settings.
+    $page = new admin_settingpage('theme_campuswks_loginpage', get_string('loginpagesettings', 'theme_campuswks'));
+    
+    //login page Company info
+    $setting = new admin_setting_confightmleditor('theme_campuswks/companyinfo', get_string('companyinfo', 'theme_campuswks'),
+    get_string('companyinfo_desc', 'theme_campuswks'), '', PARAM_RAW);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+    
+    // Login page background setting.
+    $name = 'theme_campuswks/loginpageimg';
+    $title = get_string('loginpageimg', 'theme_campuswks');
+    $description = get_string('loginpageimg_desc', 'theme_campuswks');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginpageimg');
+    $setting->set_updatedcallback('theme_campuswks_update_settings_images');
+    $page->add($setting);
+    
+    // Variable $body-color.
+    // We use an empty default value because the default colour should come from the preset.
+    $name = 'theme_campuswks/loginrightbgcolor';
+    $title = get_string('loginrightbgcolor', 'theme_campuswks');
+    $description = get_string('loginrightbgcolor_desc', 'theme_campuswks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+    
+      $settings->add($page);
 
     // Advanced settings.
     $page = new admin_settingpage('theme_campuswks_advanced', get_string('advancedsettings', 'theme_campuswks'));
@@ -109,5 +137,5 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $settings->add($page);
+    $settings->add($page);   
 }

@@ -61,6 +61,14 @@ $string['privacy:drawerblockclosed'] = 'The current preference for the block dra
 $string['privacy:drawerblockopen'] = 'The current preference for the block drawer is open.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
+$string['companyinfo'] = 'Login page company info';
+$string['companyinfo_desc'] = 'company info on Login Page will be shown on Login Page';
+$string['companyinfo_default'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+$string['loginpagesettings'] = 'Login Page settings';
+$string['loginpageimg'] = 'Login page image on right'; 
+$string['loginpageimg_desc'] = 'An Custom image that will be display on the login page.';
+$string['loginrightbgcolor'] = 'Login page right block background color'; 
+$string['loginrightbgcolor_desc'] = 'This background color will be display on login page in right block.';
 
 // Deprecated since Moodle 4.0.
 $string['totop'] = 'Go to top';
