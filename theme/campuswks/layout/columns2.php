@@ -56,6 +56,7 @@ $regionmainsettingsmenu = $buildregionmainsettings ? $OUTPUT->region_main_settin
 
 $header = $PAGE->activityheader;
 $headercontent = $header->export_for_template($renderer);
+$navbarcolor = theme_campuswks_get_setting('navbarcolor');
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -72,6 +73,7 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'headercontent' => $headercontent,
     'overflow' => $overflow,
+    'navbarcolor' => $navbarcolor,
     'addblockbutton' => $addblockbutton,
 ];
 

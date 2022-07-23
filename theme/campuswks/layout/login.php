@@ -26,9 +26,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $bodyattributes = $OUTPUT->body_attributes();
 
-$templatecontext = [
+$extraclasses = [];
+$bodyattributes = $OUTPUT->body_attributes($extraclasses);
+$loginimg = theme_campuswks_get_setting('loginimg');
+$logincontent = theme_campuswks_get_setting('logincontent');
+
+$templatecontext  = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
+    'loginimg' => $loginimg,
+    'logincontent' => $logincontent,
     'bodyattributes' => $bodyattributes
 ];
 
