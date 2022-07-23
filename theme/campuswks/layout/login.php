@@ -27,11 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 $bodyattributes = $OUTPUT->body_attributes();
 
 $extraclasses = [];
+$settings = get_config('theme_campuswks');
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
-$loginimg = theme_campuswks_get_setting('loginimg');
-$logincontent = theme_campuswks_get_setting('logincontent');
+$logincontent = $settings->companyinfo;
+$fs = get_file_storage();
+$files = $fs->get_area_files(context_system::instance()->id, 'theme_campuswks', 'loginpageimg', 0, '', false);
+foreach ($files as $file) {
+    $loginimg = clean_param(\moodle_url::make_pluginfile_url(context_system::instance()->id, $file->get_component(), $file->get_filearea(), 0, '/', $file->get_filename())->out(false), PARAM_URL);
+}
 
-$templatecontext  = [
+$templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
     'loginimg' => $loginimg,

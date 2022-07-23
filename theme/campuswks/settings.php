@@ -92,7 +92,7 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     // Must add the page after definiting all the settings!
-    $settings->add($page);
+//    $settings->add($page);
     
     // Login Page settings.
     $page = new admin_settingpage('theme_campuswks_loginpage', get_string('loginpagesettings', 'theme_campuswks'));
@@ -108,7 +108,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('loginpageimg', 'theme_campuswks');
     $description = get_string('loginpageimg_desc', 'theme_campuswks');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginpageimg');
-    $setting->set_updatedcallback('theme_campuswks_update_settings_images');
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
     
     // Variable $body-color.
