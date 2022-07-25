@@ -67,8 +67,8 @@ $string['companyinfo_default'] = 'Lorem Ipsum is simply dummy text of the printi
 $string['loginpagesettings'] = 'Login Page settings';
 $string['loginpageimg'] = 'Login page image on right'; 
 $string['loginpageimg_desc'] = 'An Custom image that will be display on the login page.';
-$string['loginrightbgcolor'] = 'Login page right block background color'; 
-$string['loginrightbgcolor_desc'] = 'This background color will be display on login page in right block.';
+$string['themecolor'] = 'Theme Color'; 
+$string['themecolor_desc'] = 'This color will reflect throught the theme.';
 
 // Deprecated since Moodle 4.0.
 $string['totop'] = 'Go to top';

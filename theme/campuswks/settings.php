@@ -113,14 +113,14 @@ if ($ADMIN->fulltree) {
     
     // Variable $body-color.
     // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_campuswks/loginrightbgcolor';
-    $title = get_string('loginrightbgcolor', 'theme_campuswks');
-    $description = get_string('loginrightbgcolor_desc', 'theme_campuswks');
+    $name = 'theme_campuswks/themecolor';
+    $title = get_string('themecolor', 'theme_campuswks');
+    $description = get_string('themecolor_desc', 'theme_campuswks');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
     
-      $settings->add($page);
+    $settings->add($page);
 
     // Advanced settings.
     $page = new admin_settingpage('theme_campuswks_advanced', get_string('advancedsettings', 'theme_campuswks'));

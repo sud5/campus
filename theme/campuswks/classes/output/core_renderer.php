@@ -262,4 +262,40 @@ class core_renderer extends \core_renderer {
         }
         return $firstview;
     }
+    
+        /**
+     * Renders the login form.
+     *
+     * @param \core_auth\output\login $form The renderable.
+     * @return string
+     */
+    public function render_login(\core_auth\output\login $form) {
+        global $CFG, $SITE,$OUTPUT;
+
+        $context = $form->export_for_template($this);
+
+        $context->errorformatted = $this->error_text($context->error);
+        $url = $this->get_logo_url();
+        if ($url) {
+            $url = $url->out(false);
+        }
+        $context->logourl = $url;
+        $context->sitename = format_string($SITE->fullname, true,
+                ['context' => \context_course::instance(SITEID), "escape" => false]);
+        $settings = get_config('theme_campuswks');
+        $OUTPUT->themecolor = $settings->themecolor;
+        $context->logincontent = $settings->companyinfo;
+        $fs = get_file_storage();
+        $files = $fs->get_area_files(\context_system::instance()->id, 'theme_campuswks', 'loginpageimg', 0, '', false);
+        foreach ($files as $file) {
+            $context->loginimg = clean_param(\moodle_url::make_pluginfile_url(\context_system::instance()->id, $file->get_component(), $file->get_filearea(), 0, '/', $file->get_filename())->out(false), PARAM_URL);
+        }
+
+        return $this->render_from_template('core/loginform', $context);
+    }
+    
+     public function theme_color() {
+        $settings = get_config('theme_campuswks');
+        return $settings->themecolor;
+    }
 }
