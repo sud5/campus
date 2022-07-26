@@ -544,7 +544,7 @@ body.pagelayout-login { background-image: url([[pix:theme_university|loginbackgr
 
 /* login page end  */
 
-/* css added by kamal side drawer  */
+/* css added by deep side drawer  */
 body.drawer-open-left{ margin-left: 258px; }
 body.drawer-ease { transition: .5s; }
 #nav-drawer{ padding: 0 12px 0 15px; top: 0; transition: all .1s ease,all .5s ease; background-color: #00687B; box-shadow: none!important; top: 6.5rem;  padding-bottom: 8rem;}
@@ -790,4 +790,4 @@ img.userpicture { margin-right: 0.5rem; border: 2px solid #93c1d0; background-co
 #page-my-index #page-header {
     display: none;
 }
-/* css added by kamal for login page --  ends  */
+/* css added by deep for login page --  ends  */
